@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --principal: rgb(171, 7, 247);
+}
+
+.sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(Absolute_Reality_v16_alien_planet_where_you_see_a_person_with_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    .sesion__contenedor {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 25rem;
+        width: 30%;
+        background-color: rgba(0, 0, 0, 0.24);
+        border-radius: 0.5rem;
+        backdrop-filter: blur(20px);
+        border: 1px solid #ffffff52;
+    }
+    .sesion__h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .sesion__caja {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .sesion__input {
+        outline:none;
+        padding-left: 10px;
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 1rem;
+        width: 95%;
+        height: 2rem;
+        background-color: #ffffff00;
+        border-radius: 2rem;
+        border: 1px solid #ffffff81;
+    }
+    .sesion__input:hover {
+        box-shadow: 0 0 3px #fff;
+    }
+    .sesion__input::placeholder {
+        color: white;
+    }
+    .sesion__caja--checkbox {
+        margin-top: 1rem;
+        display: flex;
+    }
+    .sesion__caja--recuerdame {
+        display: flex;
+    }
+    .sesion__texto--checkbox, .sesion__registrate--checkbox {
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+    .sesion__registrate--checkbox {
+        color: var(--principal);
+    }
+    .sesion__input--submit {
+        cursor: pointer;
+        padding-left: 0;
+        border: none;
+        background-color: var(--principal);
+    }
+    .sesion__input--submit:hover {
+        transition: 1s;
+        background-color: #ab07f700;
+        border:  1px solid #ffffff52;
+    }
+    .sesion__caja--registro {
+        font-size: 0.9rem;
+        margin: 6% 0;
+        display: flex;
+    }
+    .sesion__registrate:hover, .sesion__registrate--checkbox:hover{
+        box-shadow: 0px 2px 0px rgba(171, 7, 247, 0.5)
+    }
+    .sesion__registrate {
+        color: var(--principal);
+        font-weight: 600;
+    }
+}
+
+.confirmar {
+    display: none;
+}
