@@ -1,5 +1,5 @@
 var activado = false;
-
+alert("no toma la base de datos -- pendiente")
 registrate.addEventListener("click",e=>{
     if (activado == false) {
         activado = true;
